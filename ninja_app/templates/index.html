@@ -9,9 +9,10 @@
 </head>
 <body>
     <div class="your-gold">
-    <p>Your Gold:</p>
-    <div></div>
-    </div>
+        <p>Your Gold:</p>
+        <div></div>
+        </div>
+    <div class="cards">
     <form method="POST" class="place" location="farm">
         {% csrf_token %}
         <h2>Farm</h2>
@@ -36,6 +37,7 @@
         <p>(earns/takes 0-50 gold)</p>
         <button type="submit">Find Gold!</button>
     </form>
+    </div>
     <p>Activities:</p>
     <div></div>
 </body>
