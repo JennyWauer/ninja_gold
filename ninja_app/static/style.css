@@ -43,10 +43,12 @@
 .place button {
     padding: 0.25em;
     box-shadow: 0.15em 0.15em lightgray;
+    margin: 1em;
 }
 
 .activities {
     margin: 1em;
+    margin-bottom: 0;
 }
 
 .activity-div {
@@ -54,4 +56,5 @@
     height: 10em;
     width: auto;
     margin: 1em;
+    margin-top: 0;
 }
