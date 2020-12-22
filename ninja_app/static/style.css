@@ -1,0 +1,15 @@
+.your-gold {
+    display: flex;
+}
+
+.your-gold p {
+    display: inline-block;
+}
+
+.your-gold div {
+    display: inline-block;
+    border: 2px solid black;
+    height: 1em;
+    width: 5em;
+    margin: 1em;
+}
