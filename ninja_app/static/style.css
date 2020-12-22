@@ -22,6 +22,7 @@
 
 .cards {
     display: flex;
+    width: auto;
     margin: 1em;
 }
 
@@ -41,4 +42,11 @@
 .place button {
     padding: 0.25em;
     box-shadow: 0.15em 0.15em lightgray;
+}
+
+.activity-div {
+    border: 0.15em solid black;
+    height: 10em;
+    width: auto;
+    margin: 1em;
 }
