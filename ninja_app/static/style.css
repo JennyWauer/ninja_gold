@@ -13,3 +13,8 @@
     width: 5em;
     margin: 1em;
 }
+
+.card {
+    display: flex;
+    padding: 1em;
+}
