@@ -18,3 +18,9 @@
     display: flex;
     padding: 1em;
 }
+
+
+.place {
+    display: inline-block;
+    border: 2px solid black;
+}
