@@ -5,6 +5,7 @@
 
 .your-gold {
     display: flex;
+    padding: 1em;
 }
 
 .your-gold p {
@@ -16,12 +17,12 @@
     border: 2px solid black;
     height: 1em;
     width: 5em;
-    margin: 1em;
+    margin-left: 1em;
 }
 
-.card {
+.cards {
     display: flex;
-    padding: 1em;
+    margin: 1em;
 }
 
 
@@ -29,4 +30,6 @@
     display: inline-block;
     border: 2px solid black;
     padding: 1em;
+    margin: 1em;
+    text-align: center;
 }
