@@ -5,7 +5,7 @@
 
 .your-gold {
     display: flex;
-    padding: 1em;
+    margin: 1em;
 }
 
 .your-gold p {
@@ -43,6 +43,10 @@
 .place button {
     padding: 0.25em;
     box-shadow: 0.15em 0.15em lightgray;
+}
+
+.activities {
+    margin: 1em;
 }
 
 .activity-div {
