@@ -12,36 +12,48 @@
 <body>
     <div class="your-gold">
         <p>Your Gold:</p>
-        <div></div>
+        <div>{{ request.session.counter }}</div>
     </div>
     <div class="cards">
-        <form method="POST" class="place" location="farm">
+        <form action="/process_money" method="POST" class="place">
             {% csrf_token %}
             <h2>Farm</h2>
             <p>(earns 10-20 gold)</p>
-            <button type="submit">Find Gold!</button>
+            <input type="hidden" name="location" value="farm">
+            <input type="submit" value="Find Gold!" class="submit">
         </form>
-        <form method="POST" class="place" location="cave">
+        <form action="/process_money" method="POST" class="place">
             {% csrf_token %}
             <h2>Cave</h2>
             <p>(earns 5-10 gold)</p>
-            <button type="submit">Find Gold!</button>
+            <input type="hidden" name="location" value="cave">
+            <input type="submit" value="Find Gold!" class="submit">
         </form>
-        <form method="POST" class="place" location="house">
+        <form action="/process_money" method="POST" class="place">
             {% csrf_token %}
             <h2>House</h2>
             <p>(earns 2-5 gold)</p>
-            <button type="submit">Find Gold!</button>
+            <input type="hidden" name="location" value="house">
+            <input type="submit" value="Find Gold!" class="submit">
         </form>
-        <form method="POST" class="place" location="casino">
+        <form action="/process_money" method="POST" class="place">
             {% csrf_token %}
             <h2>Casino</h2>
             <p>(earns/takes 0-50 gold)</p>
-            <button type="submit">Find Gold!</button>
+            <input type="hidden" name="location" value="casino">
+            <input type="submit" value="Find Gold!" class="submit">
         </form>
     </div>
     <p class="activities">Activities:</p>
-    <div class="activity-div"></div>
+    <div class="activity-div"> 
+        <ul>
+                {% for activity in request.session.activity_log %}
+                <li>
+                {{activity}}
+                </li>
+                {% endfor %}
+        </ul>
+    </div>
 </body>
 
 </html>
